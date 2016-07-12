@@ -3,5 +3,5 @@ class User < ActiveRecord::Base
 		length: {minimum: 8}
 	validates :email, presence: true,
 		length: {minimum: 8}
-	has_many :Projects
+	has_many :projects
 end

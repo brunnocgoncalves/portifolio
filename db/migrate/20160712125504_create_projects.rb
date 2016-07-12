@@ -3,7 +3,7 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       t.string :Name
       t.text :Summary
-      t.references :UserId, index: true, foreign_key: true
+      t.references :User, index: true, foreign_key: true
       t.date :Date
 
       t.timestamps null: false
