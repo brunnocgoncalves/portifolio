@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 20160712125504) do
   create_table "projects", force: :cascade do |t|
     t.string   "Name"
     t.text     "Summary"
-    t.integer  "User_id"
+    t.integer  "user_id"
     t.date     "Date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "projects", ["User_id"], name: "index_projects_on_User_id"
+  add_index "projects", ["user_id"], name: "index_projects_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "password"
