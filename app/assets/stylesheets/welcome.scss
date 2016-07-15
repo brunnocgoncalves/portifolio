@@ -1,6 +1,41 @@
-// Place all the styles related to the welcome controller here.
+// Place all the styles related to the feeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table {
+	border: none black;
+	border-collapse: collapse;
+	width: 1200px;
+}
+
+h1 {
+	font-family: cursive;
+	text-align: center;
+}
+
+th {
+	text-align: left;
+	font-size: 1,5em;
+	font-family: Verdana;
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	font-size: 1em;
+	font-family: Verdana;
+	border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+a {
+	font-size: 1em;
+	font-family: Verdana;
+	text-decoration: none;
+	color: blue;
+}
+
 p {
-    font-family: "Courier New";
+	font-family: Verdana;
 }
