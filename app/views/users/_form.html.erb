@@ -11,28 +11,16 @@
     </div>
   <% end %>
 
-<div id="main-container" class="container">
-<div class="row">
-    <div class="col-xs-3">
-  
-    <%= f.label :password %>
-  </div>
-  <div class="col-xs-3">
-    <%= f.label :email %>
-  </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-3">
-    <%= f.text_field :password %>
-    </div>
-    <div class="col-xs-3">
-    <%= f.text_field :email %>
-  </div>
+<table>  
+  <thead>
+    <th><%= f.label :password %></th>
+    <th><%= f.label :email %></th>
+  </thead>
+  <tbody>
+    <td><%= f.text_field :password %></td>
+    <td><%= f.text_field :email %></td>
+  </tbody>
+</table>
   <div class="actions">
     <%= f.submit %>
-  </div>
-  </div>
-  </div>  
-  </div>
 <% end %>
